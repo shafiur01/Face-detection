@@ -1,0 +1,100 @@
+2024-09-04T14:14:54,053 [INFO ] W-9000-__1.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9000, pid=83299
+2024-09-04T14:14:54,065 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:14:54,067 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Successfully loaded /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-09-04T14:14:54,070 [INFO ] W-9000-__1.0-stdout MODEL_LOG - [PID]83299
+2024-09-04T14:14:54,074 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Torch worker started.
+2024-09-04T14:14:54,076 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Python runtime: 3.10.9
+2024-09-04T14:14:54,108 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9000.
+2024-09-04T14:14:54,160 [INFO ] W-9000-__1.0-stdout MODEL_LOG - model_name: _, batchSize: 1
+2024-09-04T14:14:54,815 [WARN ] W-9000-__1.0-stderr MODEL_LOG - usage: model_service_worker.py [-h] [-m TRAINED_MODEL] [--network NETWORK]
+2024-09-04T14:14:54,816 [WARN ] W-9000-__1.0-stderr MODEL_LOG -                                [--cpu]
+2024-09-04T14:14:54,817 [WARN ] W-9000-__1.0-stderr MODEL_LOG -                                [--confidence_threshold CONFIDENCE_THRESHOLD]
+2024-09-04T14:14:54,817 [WARN ] W-9000-__1.0-stderr MODEL_LOG -                                [--top_k TOP_K] [--nms_threshold NMS_THRESHOLD]
+2024-09-04T14:14:54,818 [WARN ] W-9000-__1.0-stderr MODEL_LOG -                                [--keep_top_k KEEP_TOP_K] [-s]
+2024-09-04T14:14:54,819 [WARN ] W-9000-__1.0-stderr MODEL_LOG -                                [--vis_thres VIS_THRES]
+2024-09-04T14:14:54,820 [WARN ] W-9000-__1.0-stderr MODEL_LOG -                                image_path
+2024-09-04T14:14:54,820 [WARN ] W-9000-__1.0-stderr MODEL_LOG - model_service_worker.py: error: unrecognized arguments: --sock-type --sock-name /home/model-server/tmp/.ts.sock.9000 --metrics-config /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml
+2024-09-04T14:14:56,881 [INFO ] W-9000-__1.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9000, pid=83372
+2024-09-04T14:14:56,883 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:14:56,888 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Successfully loaded /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-09-04T14:14:56,889 [INFO ] W-9000-__1.0-stdout MODEL_LOG - [PID]83372
+2024-09-04T14:14:56,891 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Torch worker started.
+2024-09-04T14:14:56,891 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Python runtime: 3.10.9
+2024-09-04T14:14:56,894 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9000.
+2024-09-04T14:14:58,883 [INFO ] W-9000-__1.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9000, pid=83403
+2024-09-04T14:14:58,885 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:14:58,892 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Successfully loaded /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-09-04T14:14:58,893 [INFO ] W-9000-__1.0-stdout MODEL_LOG - [PID]83403
+2024-09-04T14:14:58,894 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Torch worker started.
+2024-09-04T14:14:58,894 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Python runtime: 3.10.9
+2024-09-04T14:14:58,897 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9000.
+2024-09-04T14:15:01,912 [INFO ] W-9000-__1.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9000, pid=83449
+2024-09-04T14:15:01,915 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:15:01,920 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Successfully loaded /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-09-04T14:15:01,921 [INFO ] W-9000-__1.0-stdout MODEL_LOG - [PID]83449
+2024-09-04T14:15:01,922 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Torch worker started.
+2024-09-04T14:15:01,923 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Python runtime: 3.10.9
+2024-09-04T14:15:01,926 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9000.
+2024-09-04T14:15:05,892 [INFO ] W-9000-__1.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9000, pid=83496
+2024-09-04T14:15:05,895 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:15:05,899 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Successfully loaded /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-09-04T14:15:05,900 [INFO ] W-9000-__1.0-stdout MODEL_LOG - [PID]83496
+2024-09-04T14:15:05,901 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Torch worker started.
+2024-09-04T14:15:05,902 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Python runtime: 3.10.9
+2024-09-04T14:15:05,904 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9000.
+2024-09-04T14:15:11,874 [INFO ] W-9000-__1.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9000, pid=83548
+2024-09-04T14:15:11,877 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:15:11,882 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Successfully loaded /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-09-04T14:15:11,882 [INFO ] W-9000-__1.0-stdout MODEL_LOG - [PID]83548
+2024-09-04T14:15:11,883 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Torch worker started.
+2024-09-04T14:15:11,884 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Python runtime: 3.10.9
+2024-09-04T14:15:11,886 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9000.
+2024-09-04T14:15:20,842 [INFO ] W-9000-__1.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9000, pid=83614
+2024-09-04T14:15:20,843 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:15:20,850 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Successfully loaded /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-09-04T14:15:20,851 [INFO ] W-9000-__1.0-stdout MODEL_LOG - [PID]83614
+2024-09-04T14:15:20,851 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Torch worker started.
+2024-09-04T14:15:20,854 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Python runtime: 3.10.9
+2024-09-04T14:15:20,856 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9000.
+2024-09-04T14:15:34,860 [INFO ] W-9000-__1.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9000, pid=83680
+2024-09-04T14:15:34,861 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:15:34,869 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Successfully loaded /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-09-04T14:15:34,870 [INFO ] W-9000-__1.0-stdout MODEL_LOG - [PID]83680
+2024-09-04T14:15:34,871 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Torch worker started.
+2024-09-04T14:15:34,872 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Python runtime: 3.10.9
+2024-09-04T14:15:34,873 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9000.
+2024-09-04T14:15:56,820 [INFO ] W-9000-__1.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9000, pid=83810
+2024-09-04T14:15:56,822 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:15:56,827 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Successfully loaded /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-09-04T14:15:56,828 [INFO ] W-9000-__1.0-stdout MODEL_LOG - [PID]83810
+2024-09-04T14:15:56,829 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Torch worker started.
+2024-09-04T14:15:56,831 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Python runtime: 3.10.9
+2024-09-04T14:15:56,833 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9000.
+2024-09-04T14:16:31,801 [INFO ] W-9000-__1.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9000, pid=83922
+2024-09-04T14:16:31,804 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:16:31,808 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Successfully loaded /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-09-04T14:16:31,809 [INFO ] W-9000-__1.0-stdout MODEL_LOG - [PID]83922
+2024-09-04T14:16:31,809 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Torch worker started.
+2024-09-04T14:16:31,810 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Python runtime: 3.10.9
+2024-09-04T14:16:31,812 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9000.
+2024-09-04T14:17:27,768 [INFO ] W-9000-__1.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9000, pid=84071
+2024-09-04T14:17:27,770 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:17:27,777 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Successfully loaded /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-09-04T14:17:27,779 [INFO ] W-9000-__1.0-stdout MODEL_LOG - [PID]84071
+2024-09-04T14:17:27,781 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Torch worker started.
+2024-09-04T14:17:27,783 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Python runtime: 3.10.9
+2024-09-04T14:17:27,784 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9000.
+2024-09-04T14:18:57,767 [INFO ] W-9000-__1.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9000, pid=84320
+2024-09-04T14:18:57,769 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:18:57,775 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Successfully loaded /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-09-04T14:18:57,776 [INFO ] W-9000-__1.0-stdout MODEL_LOG - [PID]84320
+2024-09-04T14:18:57,777 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Torch worker started.
+2024-09-04T14:18:57,781 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Python runtime: 3.10.9
+2024-09-04T14:18:57,786 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9000.
+2024-09-04T14:21:23,226 [INFO ] W-9000-__1.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9000, pid=84625
+2024-09-04T14:21:23,228 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:21:23,235 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Successfully loaded /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-09-04T14:21:23,236 [INFO ] W-9000-__1.0-stdout MODEL_LOG - [PID]84625
+2024-09-04T14:21:23,236 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Torch worker started.
+2024-09-04T14:21:23,237 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Python runtime: 3.10.9
+2024-09-04T14:21:23,240 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9000.

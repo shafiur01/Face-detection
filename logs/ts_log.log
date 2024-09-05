@@ -1,0 +1,794 @@
+2024-09-04T14:14:52,646 [WARN ] main org.pytorch.serve.util.ConfigManager - Your torchserve instance can access any URL to load models. When deploying to production, make sure to limit the set of allowed_urls in config.properties
+2024-09-04T14:14:52,646 [WARN ] main org.pytorch.serve.util.ConfigManager - Your torchserve instance can access any URL to load models. When deploying to production, make sure to limit the set of allowed_urls in config.properties
+2024-09-04T14:14:52,661 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2024-09-04T14:14:52,661 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2024-09-04T14:14:52,739 [INFO ] main org.pytorch.serve.metrics.configuration.MetricConfiguration - Successfully loaded metrics configuration from /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml
+2024-09-04T14:14:52,739 [INFO ] main org.pytorch.serve.metrics.configuration.MetricConfiguration - Successfully loaded metrics configuration from /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml
+2024-09-04T14:14:52,982 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.8.2
+TS Home: /opt/conda/lib/python3.10/site-packages
+Current directory: /workspaces/models/code
+Temp directory: /home/model-server/tmp
+Metrics config path: /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml
+Number of GPUs: 1
+Number of CPUs: 20
+Max heap size: 3960 M
+Python executable: /opt/conda/bin/python3.10
+Config file: /etc/sagemaker-ts.properties
+Inference address: http://0.0.0.0:8080
+Management address: http://0.0.0.0:8080
+Metrics address: http://127.0.0.1:8082
+Model Store: /workspaces/models/code
+Initial Models: .
+Log dir: /workspaces/models/code/logs
+Metrics dir: /workspaces/models/code/logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Enable metrics API: true
+Metrics mode: log
+Disable system metrics: true
+Workflow Store: /workspaces/models/code
+Model config: N/A
+2024-09-04T14:14:52,982 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.8.2
+TS Home: /opt/conda/lib/python3.10/site-packages
+Current directory: /workspaces/models/code
+Temp directory: /home/model-server/tmp
+Metrics config path: /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml
+Number of GPUs: 1
+Number of CPUs: 20
+Max heap size: 3960 M
+Python executable: /opt/conda/bin/python3.10
+Config file: /etc/sagemaker-ts.properties
+Inference address: http://0.0.0.0:8080
+Management address: http://0.0.0.0:8080
+Metrics address: http://127.0.0.1:8082
+Model Store: /workspaces/models/code
+Initial Models: .
+Log dir: /workspaces/models/code/logs
+Metrics dir: /workspaces/models/code/logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Enable metrics API: true
+Metrics mode: log
+Disable system metrics: true
+Workflow Store: /workspaces/models/code
+Model config: N/A
+2024-09-04T14:14:53,001 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2024-09-04T14:14:53,001 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2024-09-04T14:14:53,044 [INFO ] main org.pytorch.serve.ModelServer - Loading initial models: .
+2024-09-04T14:14:53,044 [INFO ] main org.pytorch.serve.ModelServer - Loading initial models: .
+2024-09-04T14:14:53,052 [WARN ] main org.pytorch.serve.archive.model.ModelArchive - Model archive version is not defined. Please upgrade to torch-model-archiver 0.2.0 or higher
+2024-09-04T14:14:53,052 [WARN ] main org.pytorch.serve.archive.model.ModelArchive - Model archive version is not defined. Please upgrade to torch-model-archiver 0.2.0 or higher
+2024-09-04T14:14:53,053 [WARN ] main org.pytorch.serve.archive.model.ModelArchive - Model archive createdOn is not defined. Please upgrade to torch-model-archiver 0.2.0 or higher
+2024-09-04T14:14:53,053 [WARN ] main org.pytorch.serve.archive.model.ModelArchive - Model archive createdOn is not defined. Please upgrade to torch-model-archiver 0.2.0 or higher
+2024-09-04T14:14:53,057 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Adding new version 1.0 for model _
+2024-09-04T14:14:53,057 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Adding new version 1.0 for model _
+2024-09-04T14:14:53,057 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model _
+2024-09-04T14:14:53,057 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model _
+2024-09-04T14:14:53,058 [INFO ] main org.pytorch.serve.wlm.ModelManager - Model _ loaded.
+2024-09-04T14:14:53,058 [INFO ] main org.pytorch.serve.wlm.ModelManager - Model _ loaded.
+2024-09-04T14:14:53,059 [DEBUG] main org.pytorch.serve.wlm.ModelManager - updateModel: _, count: 1
+2024-09-04T14:14:53,059 [DEBUG] main org.pytorch.serve.wlm.ModelManager - updateModel: _, count: 1
+2024-09-04T14:14:53,072 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/conda/bin/python3.10, /opt/conda/lib/python3.10/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9000, --metrics-config, /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml]
+2024-09-04T14:14:53,072 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/conda/bin/python3.10, /opt/conda/lib/python3.10/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9000, --metrics-config, /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml]
+2024-09-04T14:14:53,075 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: EpollServerSocketChannel.
+2024-09-04T14:14:53,075 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: EpollServerSocketChannel.
+2024-09-04T14:14:53,186 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://0.0.0.0:8080
+2024-09-04T14:14:53,186 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://0.0.0.0:8080
+2024-09-04T14:14:53,187 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: EpollServerSocketChannel.
+2024-09-04T14:14:53,187 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: EpollServerSocketChannel.
+2024-09-04T14:14:53,189 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2024-09-04T14:14:53,189 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2024-09-04T14:14:54,053 [INFO ] W-9000-__1.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9000, pid=83299
+2024-09-04T14:14:54,065 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:14:54,067 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Successfully loaded /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-09-04T14:14:54,070 [INFO ] W-9000-__1.0-stdout MODEL_LOG - [PID]83299
+2024-09-04T14:14:54,074 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change null -> WORKER_STARTED
+2024-09-04T14:14:54,074 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Torch worker started.
+2024-09-04T14:14:54,074 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change null -> WORKER_STARTED
+2024-09-04T14:14:54,076 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Python runtime: 3.10.9
+2024-09-04T14:14:54,092 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:14:54,092 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:14:54,108 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9000.
+2024-09-04T14:14:54,111 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD to backend at: 1725459294111
+2024-09-04T14:14:54,111 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD to backend at: 1725459294111
+2024-09-04T14:14:54,160 [INFO ] W-9000-__1.0-stdout MODEL_LOG - model_name: _, batchSize: 1
+2024-09-04T14:14:54,815 [WARN ] W-9000-__1.0-stderr MODEL_LOG - usage: model_service_worker.py [-h] [-m TRAINED_MODEL] [--network NETWORK]
+2024-09-04T14:14:54,816 [WARN ] W-9000-__1.0-stderr MODEL_LOG -                                [--cpu]
+2024-09-04T14:14:54,817 [WARN ] W-9000-__1.0-stderr MODEL_LOG -                                [--confidence_threshold CONFIDENCE_THRESHOLD]
+2024-09-04T14:14:54,817 [WARN ] W-9000-__1.0-stderr MODEL_LOG -                                [--top_k TOP_K] [--nms_threshold NMS_THRESHOLD]
+2024-09-04T14:14:54,818 [WARN ] W-9000-__1.0-stderr MODEL_LOG -                                [--keep_top_k KEEP_TOP_K] [-s]
+2024-09-04T14:14:54,819 [WARN ] W-9000-__1.0-stderr MODEL_LOG -                                [--vis_thres VIS_THRES]
+2024-09-04T14:14:54,820 [WARN ] W-9000-__1.0-stderr MODEL_LOG -                                image_path
+2024-09-04T14:14:54,820 [WARN ] W-9000-__1.0-stderr MODEL_LOG - model_service_worker.py: error: unrecognized arguments: --sock-type --sock-name /home/model-server/tmp/.ts.sock.9000 --metrics-config /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml
+2024-09-04T14:14:54,854 [INFO ] epollEventLoopGroup-5-1 org.pytorch.serve.wlm.WorkerThread - 9000 Worker disconnected. WORKER_STARTED
+2024-09-04T14:14:54,854 [INFO ] epollEventLoopGroup-5-1 org.pytorch.serve.wlm.WorkerThread - 9000 Worker disconnected. WORKER_STARTED
+2024-09-04T14:14:54,856 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - System state is : WORKER_STARTED
+2024-09-04T14:14:54,856 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - System state is : WORKER_STARTED
+2024-09-04T14:14:54,856 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker monitoring thread interrupted or backend worker process died.
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679) ~[?:?]
+	at java.util.concurrent.ArrayBlockingQueue.poll(ArrayBlockingQueue.java:435) ~[?:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:213) [model-server.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-09-04T14:14:54,856 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker monitoring thread interrupted or backend worker process died.
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679) ~[?:?]
+	at java.util.concurrent.ArrayBlockingQueue.poll(ArrayBlockingQueue.java:435) ~[?:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:213) [model-server.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-09-04T14:14:54,868 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.BatchAggregator - Load model failed: _, error: Worker died.
+2024-09-04T14:14:54,868 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.BatchAggregator - Load model failed: _, error: Worker died.
+2024-09-04T14:14:54,869 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STARTED -> WORKER_STOPPED
+2024-09-04T14:14:54,869 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STARTED -> WORKER_STOPPED
+2024-09-04T14:14:54,870 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery start timestamp: 1725459294870
+2024-09-04T14:14:54,870 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery start timestamp: 1725459294870
+2024-09-04T14:14:54,872 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stderr
+2024-09-04T14:14:54,872 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stderr
+2024-09-04T14:14:54,873 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stdout
+2024-09-04T14:14:54,873 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stdout
+2024-09-04T14:14:54,877 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 1 seconds.
+2024-09-04T14:14:54,877 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 1 seconds.
+2024-09-04T14:14:54,888 [INFO ] W-9000-__1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stderr
+2024-09-04T14:14:54,888 [INFO ] W-9000-__1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stdout
+2024-09-04T14:14:54,888 [INFO ] W-9000-__1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stdout
+2024-09-04T14:14:54,888 [INFO ] W-9000-__1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stderr
+2024-09-04T14:14:55,879 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/conda/bin/python3.10, /opt/conda/lib/python3.10/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9000, --metrics-config, /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml]
+2024-09-04T14:14:55,879 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/conda/bin/python3.10, /opt/conda/lib/python3.10/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9000, --metrics-config, /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml]
+2024-09-04T14:14:56,881 [INFO ] W-9000-__1.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9000, pid=83372
+2024-09-04T14:14:56,883 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:14:56,888 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Successfully loaded /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-09-04T14:14:56,889 [INFO ] W-9000-__1.0-stdout MODEL_LOG - [PID]83372
+2024-09-04T14:14:56,891 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STOPPED -> WORKER_STARTED
+2024-09-04T14:14:56,891 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Torch worker started.
+2024-09-04T14:14:56,891 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STOPPED -> WORKER_STARTED
+2024-09-04T14:14:56,892 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:14:56,891 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Python runtime: 3.10.9
+2024-09-04T14:14:56,892 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:14:56,894 [INFO ] epollEventLoopGroup-5-1 org.pytorch.serve.wlm.WorkerThread - 9000 Worker disconnected. WORKER_STARTED
+2024-09-04T14:14:56,894 [INFO ] epollEventLoopGroup-5-1 org.pytorch.serve.wlm.WorkerThread - 9000 Worker disconnected. WORKER_STARTED
+2024-09-04T14:14:56,894 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9000.
+2024-09-04T14:14:56,895 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - System state is : WORKER_STARTED
+2024-09-04T14:14:56,895 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - System state is : WORKER_STARTED
+2024-09-04T14:14:56,896 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker monitoring thread interrupted or backend worker process died.
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:515) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:677) ~[?:?]
+	at org.pytorch.serve.wlm.Model.pollBatch(Model.java:276) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.BatchAggregator.getRequest(BatchAggregator.java:34) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:186) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-09-04T14:14:56,896 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker monitoring thread interrupted or backend worker process died.
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:515) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:677) ~[?:?]
+	at org.pytorch.serve.wlm.Model.pollBatch(Model.java:276) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.BatchAggregator.getRequest(BatchAggregator.java:34) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:186) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-09-04T14:14:56,898 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STARTED -> WORKER_STOPPED
+2024-09-04T14:14:56,898 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STARTED -> WORKER_STOPPED
+2024-09-04T14:14:56,899 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-09-04T14:14:56,899 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-09-04T14:14:56,901 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stderr
+2024-09-04T14:14:56,901 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stderr
+2024-09-04T14:14:56,903 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stdout
+2024-09-04T14:14:56,903 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stdout
+2024-09-04T14:14:56,905 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 1 seconds.
+2024-09-04T14:14:56,905 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 1 seconds.
+2024-09-04T14:14:57,215 [INFO ] W-9000-__1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stdout
+2024-09-04T14:14:57,215 [INFO ] W-9000-__1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stderr
+2024-09-04T14:14:57,215 [INFO ] W-9000-__1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stdout
+2024-09-04T14:14:57,215 [INFO ] W-9000-__1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stderr
+2024-09-04T14:14:57,908 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/conda/bin/python3.10, /opt/conda/lib/python3.10/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9000, --metrics-config, /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml]
+2024-09-04T14:14:57,908 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/conda/bin/python3.10, /opt/conda/lib/python3.10/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9000, --metrics-config, /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml]
+2024-09-04T14:14:58,883 [INFO ] W-9000-__1.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9000, pid=83403
+2024-09-04T14:14:58,885 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:14:58,892 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Successfully loaded /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-09-04T14:14:58,893 [INFO ] W-9000-__1.0-stdout MODEL_LOG - [PID]83403
+2024-09-04T14:14:58,894 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STOPPED -> WORKER_STARTED
+2024-09-04T14:14:58,894 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Torch worker started.
+2024-09-04T14:14:58,894 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STOPPED -> WORKER_STARTED
+2024-09-04T14:14:58,894 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Python runtime: 3.10.9
+2024-09-04T14:14:58,895 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:14:58,895 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:14:58,897 [INFO ] epollEventLoopGroup-5-1 org.pytorch.serve.wlm.WorkerThread - 9000 Worker disconnected. WORKER_STARTED
+2024-09-04T14:14:58,897 [INFO ] epollEventLoopGroup-5-1 org.pytorch.serve.wlm.WorkerThread - 9000 Worker disconnected. WORKER_STARTED
+2024-09-04T14:14:58,897 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9000.
+2024-09-04T14:14:58,898 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - System state is : WORKER_STARTED
+2024-09-04T14:14:58,898 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - System state is : WORKER_STARTED
+2024-09-04T14:14:58,899 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker monitoring thread interrupted or backend worker process died.
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:515) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:677) ~[?:?]
+	at org.pytorch.serve.wlm.Model.pollBatch(Model.java:276) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.BatchAggregator.getRequest(BatchAggregator.java:34) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:186) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-09-04T14:14:58,899 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker monitoring thread interrupted or backend worker process died.
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:515) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:677) ~[?:?]
+	at org.pytorch.serve.wlm.Model.pollBatch(Model.java:276) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.BatchAggregator.getRequest(BatchAggregator.java:34) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:186) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-09-04T14:14:58,902 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STARTED -> WORKER_STOPPED
+2024-09-04T14:14:58,902 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STARTED -> WORKER_STOPPED
+2024-09-04T14:14:58,903 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-09-04T14:14:58,903 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-09-04T14:14:58,905 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stderr
+2024-09-04T14:14:58,905 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stderr
+2024-09-04T14:14:58,906 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stdout
+2024-09-04T14:14:58,906 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stdout
+2024-09-04T14:14:58,907 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 2 seconds.
+2024-09-04T14:14:58,907 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 2 seconds.
+2024-09-04T14:14:59,169 [INFO ] W-9000-__1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stderr
+2024-09-04T14:14:59,169 [INFO ] W-9000-__1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stdout
+2024-09-04T14:14:59,169 [INFO ] W-9000-__1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stdout
+2024-09-04T14:14:59,169 [INFO ] W-9000-__1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stderr
+2024-09-04T14:15:00,911 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/conda/bin/python3.10, /opt/conda/lib/python3.10/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9000, --metrics-config, /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml]
+2024-09-04T14:15:00,911 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/conda/bin/python3.10, /opt/conda/lib/python3.10/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9000, --metrics-config, /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml]
+2024-09-04T14:15:01,912 [INFO ] W-9000-__1.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9000, pid=83449
+2024-09-04T14:15:01,915 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:15:01,920 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Successfully loaded /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-09-04T14:15:01,921 [INFO ] W-9000-__1.0-stdout MODEL_LOG - [PID]83449
+2024-09-04T14:15:01,923 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STOPPED -> WORKER_STARTED
+2024-09-04T14:15:01,922 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Torch worker started.
+2024-09-04T14:15:01,923 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STOPPED -> WORKER_STARTED
+2024-09-04T14:15:01,923 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Python runtime: 3.10.9
+2024-09-04T14:15:01,924 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:15:01,924 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:15:01,926 [INFO ] epollEventLoopGroup-5-1 org.pytorch.serve.wlm.WorkerThread - 9000 Worker disconnected. WORKER_STARTED
+2024-09-04T14:15:01,926 [INFO ] epollEventLoopGroup-5-1 org.pytorch.serve.wlm.WorkerThread - 9000 Worker disconnected. WORKER_STARTED
+2024-09-04T14:15:01,926 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9000.
+2024-09-04T14:15:01,929 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - System state is : WORKER_STARTED
+2024-09-04T14:15:01,929 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - System state is : WORKER_STARTED
+2024-09-04T14:15:01,930 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker monitoring thread interrupted or backend worker process died.
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:515) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:677) ~[?:?]
+	at org.pytorch.serve.wlm.Model.pollBatch(Model.java:276) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.BatchAggregator.getRequest(BatchAggregator.java:34) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:186) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-09-04T14:15:01,930 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker monitoring thread interrupted or backend worker process died.
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:515) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:677) ~[?:?]
+	at org.pytorch.serve.wlm.Model.pollBatch(Model.java:276) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.BatchAggregator.getRequest(BatchAggregator.java:34) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:186) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-09-04T14:15:01,932 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STARTED -> WORKER_STOPPED
+2024-09-04T14:15:01,932 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STARTED -> WORKER_STOPPED
+2024-09-04T14:15:01,933 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-09-04T14:15:01,933 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-09-04T14:15:01,934 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stderr
+2024-09-04T14:15:01,934 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stderr
+2024-09-04T14:15:01,935 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stdout
+2024-09-04T14:15:01,935 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stdout
+2024-09-04T14:15:01,937 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 3 seconds.
+2024-09-04T14:15:01,937 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 3 seconds.
+2024-09-04T14:15:02,184 [INFO ] W-9000-__1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stdout
+2024-09-04T14:15:02,184 [INFO ] W-9000-__1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stdout
+2024-09-04T14:15:02,184 [INFO ] W-9000-__1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stderr
+2024-09-04T14:15:02,184 [INFO ] W-9000-__1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stderr
+2024-09-04T14:15:04,942 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/conda/bin/python3.10, /opt/conda/lib/python3.10/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9000, --metrics-config, /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml]
+2024-09-04T14:15:04,942 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/conda/bin/python3.10, /opt/conda/lib/python3.10/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9000, --metrics-config, /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml]
+2024-09-04T14:15:05,892 [INFO ] W-9000-__1.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9000, pid=83496
+2024-09-04T14:15:05,895 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:15:05,899 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Successfully loaded /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-09-04T14:15:05,900 [INFO ] W-9000-__1.0-stdout MODEL_LOG - [PID]83496
+2024-09-04T14:15:05,901 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STOPPED -> WORKER_STARTED
+2024-09-04T14:15:05,901 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STOPPED -> WORKER_STARTED
+2024-09-04T14:15:05,901 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Torch worker started.
+2024-09-04T14:15:05,902 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:15:05,902 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:15:05,902 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Python runtime: 3.10.9
+2024-09-04T14:15:05,904 [INFO ] epollEventLoopGroup-5-1 org.pytorch.serve.wlm.WorkerThread - 9000 Worker disconnected. WORKER_STARTED
+2024-09-04T14:15:05,904 [INFO ] epollEventLoopGroup-5-1 org.pytorch.serve.wlm.WorkerThread - 9000 Worker disconnected. WORKER_STARTED
+2024-09-04T14:15:05,904 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9000.
+2024-09-04T14:15:05,904 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - System state is : WORKER_STARTED
+2024-09-04T14:15:05,904 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - System state is : WORKER_STARTED
+2024-09-04T14:15:05,905 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker monitoring thread interrupted or backend worker process died.
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:515) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:677) ~[?:?]
+	at org.pytorch.serve.wlm.Model.pollBatch(Model.java:276) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.BatchAggregator.getRequest(BatchAggregator.java:34) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:186) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-09-04T14:15:05,905 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker monitoring thread interrupted or backend worker process died.
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:515) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:677) ~[?:?]
+	at org.pytorch.serve.wlm.Model.pollBatch(Model.java:276) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.BatchAggregator.getRequest(BatchAggregator.java:34) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:186) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-09-04T14:15:05,907 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STARTED -> WORKER_STOPPED
+2024-09-04T14:15:05,907 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STARTED -> WORKER_STOPPED
+2024-09-04T14:15:05,908 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-09-04T14:15:05,908 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-09-04T14:15:05,910 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stderr
+2024-09-04T14:15:05,910 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stderr
+2024-09-04T14:15:05,910 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stdout
+2024-09-04T14:15:05,910 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stdout
+2024-09-04T14:15:05,911 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 5 seconds.
+2024-09-04T14:15:05,911 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 5 seconds.
+2024-09-04T14:15:06,162 [INFO ] W-9000-__1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stdout
+2024-09-04T14:15:06,162 [INFO ] W-9000-__1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stderr
+2024-09-04T14:15:06,162 [INFO ] W-9000-__1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stdout
+2024-09-04T14:15:06,162 [INFO ] W-9000-__1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stderr
+2024-09-04T14:15:10,913 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/conda/bin/python3.10, /opt/conda/lib/python3.10/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9000, --metrics-config, /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml]
+2024-09-04T14:15:10,913 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/conda/bin/python3.10, /opt/conda/lib/python3.10/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9000, --metrics-config, /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml]
+2024-09-04T14:15:11,874 [INFO ] W-9000-__1.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9000, pid=83548
+2024-09-04T14:15:11,877 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:15:11,882 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Successfully loaded /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-09-04T14:15:11,882 [INFO ] W-9000-__1.0-stdout MODEL_LOG - [PID]83548
+2024-09-04T14:15:11,883 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STOPPED -> WORKER_STARTED
+2024-09-04T14:15:11,883 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Torch worker started.
+2024-09-04T14:15:11,883 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STOPPED -> WORKER_STARTED
+2024-09-04T14:15:11,884 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:15:11,884 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Python runtime: 3.10.9
+2024-09-04T14:15:11,884 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:15:11,886 [INFO ] epollEventLoopGroup-5-1 org.pytorch.serve.wlm.WorkerThread - 9000 Worker disconnected. WORKER_STARTED
+2024-09-04T14:15:11,886 [INFO ] epollEventLoopGroup-5-1 org.pytorch.serve.wlm.WorkerThread - 9000 Worker disconnected. WORKER_STARTED
+2024-09-04T14:15:11,886 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9000.
+2024-09-04T14:15:11,886 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - System state is : WORKER_STARTED
+2024-09-04T14:15:11,886 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - System state is : WORKER_STARTED
+2024-09-04T14:15:11,887 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker monitoring thread interrupted or backend worker process died.
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:515) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:677) ~[?:?]
+	at org.pytorch.serve.wlm.Model.pollBatch(Model.java:276) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.BatchAggregator.getRequest(BatchAggregator.java:34) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:186) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-09-04T14:15:11,887 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker monitoring thread interrupted or backend worker process died.
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:515) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:677) ~[?:?]
+	at org.pytorch.serve.wlm.Model.pollBatch(Model.java:276) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.BatchAggregator.getRequest(BatchAggregator.java:34) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:186) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-09-04T14:15:11,888 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STARTED -> WORKER_STOPPED
+2024-09-04T14:15:11,888 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STARTED -> WORKER_STOPPED
+2024-09-04T14:15:11,888 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-09-04T14:15:11,888 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-09-04T14:15:11,889 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stderr
+2024-09-04T14:15:11,889 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stderr
+2024-09-04T14:15:11,890 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stdout
+2024-09-04T14:15:11,890 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stdout
+2024-09-04T14:15:11,900 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 8 seconds.
+2024-09-04T14:15:11,900 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 8 seconds.
+2024-09-04T14:15:12,141 [INFO ] W-9000-__1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stdout
+2024-09-04T14:15:12,140 [INFO ] W-9000-__1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stderr
+2024-09-04T14:15:12,141 [INFO ] W-9000-__1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stdout
+2024-09-04T14:15:12,140 [INFO ] W-9000-__1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stderr
+2024-09-04T14:15:19,901 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/conda/bin/python3.10, /opt/conda/lib/python3.10/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9000, --metrics-config, /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml]
+2024-09-04T14:15:19,901 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/conda/bin/python3.10, /opt/conda/lib/python3.10/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9000, --metrics-config, /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml]
+2024-09-04T14:15:20,842 [INFO ] W-9000-__1.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9000, pid=83614
+2024-09-04T14:15:20,843 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:15:20,850 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Successfully loaded /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-09-04T14:15:20,851 [INFO ] W-9000-__1.0-stdout MODEL_LOG - [PID]83614
+2024-09-04T14:15:20,851 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STOPPED -> WORKER_STARTED
+2024-09-04T14:15:20,851 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STOPPED -> WORKER_STARTED
+2024-09-04T14:15:20,853 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:15:20,851 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Torch worker started.
+2024-09-04T14:15:20,853 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:15:20,854 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Python runtime: 3.10.9
+2024-09-04T14:15:20,855 [INFO ] epollEventLoopGroup-5-1 org.pytorch.serve.wlm.WorkerThread - 9000 Worker disconnected. WORKER_STARTED
+2024-09-04T14:15:20,856 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9000.
+2024-09-04T14:15:20,855 [INFO ] epollEventLoopGroup-5-1 org.pytorch.serve.wlm.WorkerThread - 9000 Worker disconnected. WORKER_STARTED
+2024-09-04T14:15:20,857 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - System state is : WORKER_STARTED
+2024-09-04T14:15:20,857 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - System state is : WORKER_STARTED
+2024-09-04T14:15:20,858 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker monitoring thread interrupted or backend worker process died.
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:515) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:677) ~[?:?]
+	at org.pytorch.serve.wlm.Model.pollBatch(Model.java:276) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.BatchAggregator.getRequest(BatchAggregator.java:34) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:186) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-09-04T14:15:20,858 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker monitoring thread interrupted or backend worker process died.
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:515) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:677) ~[?:?]
+	at org.pytorch.serve.wlm.Model.pollBatch(Model.java:276) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.BatchAggregator.getRequest(BatchAggregator.java:34) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:186) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-09-04T14:15:20,860 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STARTED -> WORKER_STOPPED
+2024-09-04T14:15:20,860 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STARTED -> WORKER_STOPPED
+2024-09-04T14:15:20,863 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-09-04T14:15:20,863 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-09-04T14:15:20,865 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stderr
+2024-09-04T14:15:20,865 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stderr
+2024-09-04T14:15:20,866 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stdout
+2024-09-04T14:15:20,866 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stdout
+2024-09-04T14:15:20,867 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 13 seconds.
+2024-09-04T14:15:20,867 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 13 seconds.
+2024-09-04T14:15:21,115 [INFO ] W-9000-__1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stdout
+2024-09-04T14:15:21,115 [INFO ] W-9000-__1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stderr
+2024-09-04T14:15:21,115 [INFO ] W-9000-__1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stdout
+2024-09-04T14:15:21,115 [INFO ] W-9000-__1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stderr
+2024-09-04T14:15:33,870 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/conda/bin/python3.10, /opt/conda/lib/python3.10/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9000, --metrics-config, /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml]
+2024-09-04T14:15:33,870 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/conda/bin/python3.10, /opt/conda/lib/python3.10/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9000, --metrics-config, /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml]
+2024-09-04T14:15:34,860 [INFO ] W-9000-__1.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9000, pid=83680
+2024-09-04T14:15:34,861 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:15:34,869 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Successfully loaded /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-09-04T14:15:34,870 [INFO ] W-9000-__1.0-stdout MODEL_LOG - [PID]83680
+2024-09-04T14:15:34,871 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STOPPED -> WORKER_STARTED
+2024-09-04T14:15:34,871 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STOPPED -> WORKER_STARTED
+2024-09-04T14:15:34,871 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Torch worker started.
+2024-09-04T14:15:34,872 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:15:34,872 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Python runtime: 3.10.9
+2024-09-04T14:15:34,872 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:15:34,873 [INFO ] epollEventLoopGroup-5-1 org.pytorch.serve.wlm.WorkerThread - 9000 Worker disconnected. WORKER_STARTED
+2024-09-04T14:15:34,873 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9000.
+2024-09-04T14:15:34,873 [INFO ] epollEventLoopGroup-5-1 org.pytorch.serve.wlm.WorkerThread - 9000 Worker disconnected. WORKER_STARTED
+2024-09-04T14:15:34,874 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - System state is : WORKER_STARTED
+2024-09-04T14:15:34,874 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - System state is : WORKER_STARTED
+2024-09-04T14:15:34,874 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker monitoring thread interrupted or backend worker process died.
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:515) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:677) ~[?:?]
+	at org.pytorch.serve.wlm.Model.pollBatch(Model.java:276) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.BatchAggregator.getRequest(BatchAggregator.java:34) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:186) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-09-04T14:15:34,874 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker monitoring thread interrupted or backend worker process died.
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:515) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:677) ~[?:?]
+	at org.pytorch.serve.wlm.Model.pollBatch(Model.java:276) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.BatchAggregator.getRequest(BatchAggregator.java:34) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:186) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-09-04T14:15:34,875 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STARTED -> WORKER_STOPPED
+2024-09-04T14:15:34,875 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STARTED -> WORKER_STOPPED
+2024-09-04T14:15:34,877 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-09-04T14:15:34,877 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-09-04T14:15:34,880 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stderr
+2024-09-04T14:15:34,880 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stderr
+2024-09-04T14:15:34,882 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stdout
+2024-09-04T14:15:34,882 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stdout
+2024-09-04T14:15:34,883 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 21 seconds.
+2024-09-04T14:15:34,883 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 21 seconds.
+2024-09-04T14:15:35,111 [INFO ] W-9000-__1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stdout
+2024-09-04T14:15:35,111 [INFO ] W-9000-__1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stdout
+2024-09-04T14:15:35,111 [INFO ] W-9000-__1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stderr
+2024-09-04T14:15:35,111 [INFO ] W-9000-__1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stderr
+2024-09-04T14:15:55,885 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/conda/bin/python3.10, /opt/conda/lib/python3.10/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9000, --metrics-config, /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml]
+2024-09-04T14:15:55,885 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/conda/bin/python3.10, /opt/conda/lib/python3.10/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9000, --metrics-config, /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml]
+2024-09-04T14:15:56,820 [INFO ] W-9000-__1.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9000, pid=83810
+2024-09-04T14:15:56,822 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:15:56,827 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Successfully loaded /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-09-04T14:15:56,828 [INFO ] W-9000-__1.0-stdout MODEL_LOG - [PID]83810
+2024-09-04T14:15:56,829 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STOPPED -> WORKER_STARTED
+2024-09-04T14:15:56,829 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Torch worker started.
+2024-09-04T14:15:56,829 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STOPPED -> WORKER_STARTED
+2024-09-04T14:15:56,831 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Python runtime: 3.10.9
+2024-09-04T14:15:56,831 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:15:56,831 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:15:56,832 [INFO ] epollEventLoopGroup-5-1 org.pytorch.serve.wlm.WorkerThread - 9000 Worker disconnected. WORKER_STARTED
+2024-09-04T14:15:56,832 [INFO ] epollEventLoopGroup-5-1 org.pytorch.serve.wlm.WorkerThread - 9000 Worker disconnected. WORKER_STARTED
+2024-09-04T14:15:56,833 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9000.
+2024-09-04T14:15:56,834 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - System state is : WORKER_STARTED
+2024-09-04T14:15:56,834 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - System state is : WORKER_STARTED
+2024-09-04T14:15:56,834 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker monitoring thread interrupted or backend worker process died.
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:515) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:677) ~[?:?]
+	at org.pytorch.serve.wlm.Model.pollBatch(Model.java:276) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.BatchAggregator.getRequest(BatchAggregator.java:34) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:186) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-09-04T14:15:56,834 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker monitoring thread interrupted or backend worker process died.
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:515) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:677) ~[?:?]
+	at org.pytorch.serve.wlm.Model.pollBatch(Model.java:276) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.BatchAggregator.getRequest(BatchAggregator.java:34) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:186) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-09-04T14:15:56,835 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STARTED -> WORKER_STOPPED
+2024-09-04T14:15:56,835 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STARTED -> WORKER_STOPPED
+2024-09-04T14:15:56,836 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-09-04T14:15:56,836 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-09-04T14:15:56,837 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stderr
+2024-09-04T14:15:56,837 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stderr
+2024-09-04T14:15:56,838 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stdout
+2024-09-04T14:15:56,838 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stdout
+2024-09-04T14:15:56,838 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 34 seconds.
+2024-09-04T14:15:56,838 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 34 seconds.
+2024-09-04T14:15:57,123 [INFO ] W-9000-__1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stdout
+2024-09-04T14:15:57,123 [INFO ] W-9000-__1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stderr
+2024-09-04T14:15:57,123 [INFO ] W-9000-__1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stdout
+2024-09-04T14:15:57,123 [INFO ] W-9000-__1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stderr
+2024-09-04T14:16:30,840 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/conda/bin/python3.10, /opt/conda/lib/python3.10/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9000, --metrics-config, /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml]
+2024-09-04T14:16:30,840 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/conda/bin/python3.10, /opt/conda/lib/python3.10/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9000, --metrics-config, /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml]
+2024-09-04T14:16:31,801 [INFO ] W-9000-__1.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9000, pid=83922
+2024-09-04T14:16:31,804 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:16:31,808 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Successfully loaded /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-09-04T14:16:31,809 [INFO ] W-9000-__1.0-stdout MODEL_LOG - [PID]83922
+2024-09-04T14:16:31,810 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STOPPED -> WORKER_STARTED
+2024-09-04T14:16:31,810 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STOPPED -> WORKER_STARTED
+2024-09-04T14:16:31,809 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Torch worker started.
+2024-09-04T14:16:31,810 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:16:31,810 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:16:31,810 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Python runtime: 3.10.9
+2024-09-04T14:16:31,811 [INFO ] epollEventLoopGroup-5-1 org.pytorch.serve.wlm.WorkerThread - 9000 Worker disconnected. WORKER_STARTED
+2024-09-04T14:16:31,812 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9000.
+2024-09-04T14:16:31,811 [INFO ] epollEventLoopGroup-5-1 org.pytorch.serve.wlm.WorkerThread - 9000 Worker disconnected. WORKER_STARTED
+2024-09-04T14:16:31,813 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - System state is : WORKER_STARTED
+2024-09-04T14:16:31,813 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - System state is : WORKER_STARTED
+2024-09-04T14:16:31,813 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker monitoring thread interrupted or backend worker process died.
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:515) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:677) ~[?:?]
+	at org.pytorch.serve.wlm.Model.pollBatch(Model.java:276) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.BatchAggregator.getRequest(BatchAggregator.java:34) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:186) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-09-04T14:16:31,813 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker monitoring thread interrupted or backend worker process died.
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:515) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:677) ~[?:?]
+	at org.pytorch.serve.wlm.Model.pollBatch(Model.java:276) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.BatchAggregator.getRequest(BatchAggregator.java:34) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:186) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-09-04T14:16:31,814 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STARTED -> WORKER_STOPPED
+2024-09-04T14:16:31,814 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STARTED -> WORKER_STOPPED
+2024-09-04T14:16:31,814 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-09-04T14:16:31,814 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-09-04T14:16:31,815 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stderr
+2024-09-04T14:16:31,815 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stderr
+2024-09-04T14:16:31,816 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stdout
+2024-09-04T14:16:31,816 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stdout
+2024-09-04T14:16:31,817 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 55 seconds.
+2024-09-04T14:16:31,817 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 55 seconds.
+2024-09-04T14:16:32,053 [INFO ] W-9000-__1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stdout
+2024-09-04T14:16:32,053 [INFO ] W-9000-__1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stdout
+2024-09-04T14:16:32,053 [INFO ] W-9000-__1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stderr
+2024-09-04T14:16:32,053 [INFO ] W-9000-__1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stderr
+2024-09-04T14:17:26,818 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/conda/bin/python3.10, /opt/conda/lib/python3.10/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9000, --metrics-config, /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml]
+2024-09-04T14:17:26,818 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/conda/bin/python3.10, /opt/conda/lib/python3.10/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9000, --metrics-config, /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml]
+2024-09-04T14:17:27,768 [INFO ] W-9000-__1.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9000, pid=84071
+2024-09-04T14:17:27,770 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:17:27,777 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Successfully loaded /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-09-04T14:17:27,779 [INFO ] W-9000-__1.0-stdout MODEL_LOG - [PID]84071
+2024-09-04T14:17:27,781 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STOPPED -> WORKER_STARTED
+2024-09-04T14:17:27,781 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STOPPED -> WORKER_STARTED
+2024-09-04T14:17:27,782 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:17:27,781 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Torch worker started.
+2024-09-04T14:17:27,782 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:17:27,783 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Python runtime: 3.10.9
+2024-09-04T14:17:27,784 [INFO ] epollEventLoopGroup-5-1 org.pytorch.serve.wlm.WorkerThread - 9000 Worker disconnected. WORKER_STARTED
+2024-09-04T14:17:27,784 [INFO ] epollEventLoopGroup-5-1 org.pytorch.serve.wlm.WorkerThread - 9000 Worker disconnected. WORKER_STARTED
+2024-09-04T14:17:27,784 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9000.
+2024-09-04T14:17:27,785 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - System state is : WORKER_STARTED
+2024-09-04T14:17:27,785 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - System state is : WORKER_STARTED
+2024-09-04T14:17:27,788 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker monitoring thread interrupted or backend worker process died.
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:515) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:677) ~[?:?]
+	at org.pytorch.serve.wlm.Model.pollBatch(Model.java:276) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.BatchAggregator.getRequest(BatchAggregator.java:34) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:186) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-09-04T14:17:27,788 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker monitoring thread interrupted or backend worker process died.
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:515) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:677) ~[?:?]
+	at org.pytorch.serve.wlm.Model.pollBatch(Model.java:276) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.BatchAggregator.getRequest(BatchAggregator.java:34) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:186) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-09-04T14:17:27,789 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STARTED -> WORKER_STOPPED
+2024-09-04T14:17:27,789 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STARTED -> WORKER_STOPPED
+2024-09-04T14:17:27,789 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-09-04T14:17:27,789 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-09-04T14:17:27,790 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stderr
+2024-09-04T14:17:27,790 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stderr
+2024-09-04T14:17:27,798 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stdout
+2024-09-04T14:17:27,798 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stdout
+2024-09-04T14:17:27,799 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 89 seconds.
+2024-09-04T14:17:27,799 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 89 seconds.
+2024-09-04T14:17:28,039 [INFO ] W-9000-__1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stdout
+2024-09-04T14:17:28,039 [INFO ] W-9000-__1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stderr
+2024-09-04T14:17:28,039 [INFO ] W-9000-__1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stdout
+2024-09-04T14:17:28,039 [INFO ] W-9000-__1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stderr
+2024-09-04T14:18:56,800 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/conda/bin/python3.10, /opt/conda/lib/python3.10/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9000, --metrics-config, /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml]
+2024-09-04T14:18:56,800 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/conda/bin/python3.10, /opt/conda/lib/python3.10/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9000, --metrics-config, /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml]
+2024-09-04T14:18:57,767 [INFO ] W-9000-__1.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9000, pid=84320
+2024-09-04T14:18:57,769 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:18:57,775 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Successfully loaded /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-09-04T14:18:57,776 [INFO ] W-9000-__1.0-stdout MODEL_LOG - [PID]84320
+2024-09-04T14:18:57,777 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STOPPED -> WORKER_STARTED
+2024-09-04T14:18:57,777 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STOPPED -> WORKER_STARTED
+2024-09-04T14:18:57,779 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:18:57,779 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:18:57,777 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Torch worker started.
+2024-09-04T14:18:57,782 [INFO ] epollEventLoopGroup-5-1 org.pytorch.serve.wlm.WorkerThread - 9000 Worker disconnected. WORKER_STARTED
+2024-09-04T14:18:57,782 [INFO ] epollEventLoopGroup-5-1 org.pytorch.serve.wlm.WorkerThread - 9000 Worker disconnected. WORKER_STARTED
+2024-09-04T14:18:57,781 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Python runtime: 3.10.9
+2024-09-04T14:18:57,783 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - System state is : WORKER_STARTED
+2024-09-04T14:18:57,783 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - System state is : WORKER_STARTED
+2024-09-04T14:18:57,786 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9000.
+2024-09-04T14:18:57,787 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker monitoring thread interrupted or backend worker process died.
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:515) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:677) ~[?:?]
+	at org.pytorch.serve.wlm.Model.pollBatch(Model.java:276) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.BatchAggregator.getRequest(BatchAggregator.java:34) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:186) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-09-04T14:18:57,787 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker monitoring thread interrupted or backend worker process died.
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:515) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:677) ~[?:?]
+	at org.pytorch.serve.wlm.Model.pollBatch(Model.java:276) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.BatchAggregator.getRequest(BatchAggregator.java:34) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:186) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-09-04T14:18:57,789 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STARTED -> WORKER_STOPPED
+2024-09-04T14:18:57,789 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STARTED -> WORKER_STOPPED
+2024-09-04T14:18:57,791 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-09-04T14:18:57,791 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-09-04T14:18:57,792 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stderr
+2024-09-04T14:18:57,792 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stderr
+2024-09-04T14:18:57,793 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stdout
+2024-09-04T14:18:57,793 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stdout
+2024-09-04T14:18:57,794 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 144 seconds.
+2024-09-04T14:18:57,794 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 144 seconds.
+2024-09-04T14:18:58,091 [INFO ] W-9000-__1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stdout
+2024-09-04T14:18:58,091 [INFO ] W-9000-__1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stdout
+2024-09-04T14:18:58,091 [INFO ] W-9000-__1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stderr
+2024-09-04T14:18:58,091 [INFO ] W-9000-__1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stderr
+2024-09-04T14:21:21,791 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/conda/bin/python3.10, /opt/conda/lib/python3.10/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9000, --metrics-config, /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml]
+2024-09-04T14:21:21,791 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/conda/bin/python3.10, /opt/conda/lib/python3.10/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /home/model-server/tmp/.ts.sock.9000, --metrics-config, /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml]
+2024-09-04T14:21:23,226 [INFO ] W-9000-__1.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9000, pid=84625
+2024-09-04T14:21:23,228 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:21:23,235 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Successfully loaded /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-09-04T14:21:23,236 [INFO ] W-9000-__1.0-stdout MODEL_LOG - [PID]84625
+2024-09-04T14:21:23,237 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STOPPED -> WORKER_STARTED
+2024-09-04T14:21:23,236 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Torch worker started.
+2024-09-04T14:21:23,237 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STOPPED -> WORKER_STARTED
+2024-09-04T14:21:23,237 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Python runtime: 3.10.9
+2024-09-04T14:21:23,238 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:21:23,238 [INFO ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9000
+2024-09-04T14:21:23,240 [INFO ] epollEventLoopGroup-5-1 org.pytorch.serve.wlm.WorkerThread - 9000 Worker disconnected. WORKER_STARTED
+2024-09-04T14:21:23,240 [INFO ] W-9000-__1.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9000.
+2024-09-04T14:21:23,240 [INFO ] epollEventLoopGroup-5-1 org.pytorch.serve.wlm.WorkerThread - 9000 Worker disconnected. WORKER_STARTED
+2024-09-04T14:21:23,241 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - System state is : WORKER_STARTED
+2024-09-04T14:21:23,241 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - System state is : WORKER_STARTED
+2024-09-04T14:21:23,242 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker monitoring thread interrupted or backend worker process died.
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:515) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:677) ~[?:?]
+	at org.pytorch.serve.wlm.Model.pollBatch(Model.java:276) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.BatchAggregator.getRequest(BatchAggregator.java:34) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:186) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-09-04T14:21:23,242 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker monitoring thread interrupted or backend worker process died.
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:515) ~[?:?]
+	at java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:677) ~[?:?]
+	at org.pytorch.serve.wlm.Model.pollBatch(Model.java:276) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.BatchAggregator.getRequest(BatchAggregator.java:34) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:186) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-09-04T14:21:23,245 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STARTED -> WORKER_STOPPED
+2024-09-04T14:21:23,245 [DEBUG] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-__1.0 State change WORKER_STARTED -> WORKER_STOPPED
+2024-09-04T14:21:23,245 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-09-04T14:21:23,245 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-09-04T14:21:23,246 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stderr
+2024-09-04T14:21:23,246 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stderr
+2024-09-04T14:21:23,247 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stdout
+2024-09-04T14:21:23,247 [WARN ] W-9000-__1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-__1.0-stdout
+2024-09-04T14:21:23,658 [INFO ] W-9000-__1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stdout
+2024-09-04T14:21:23,658 [INFO ] W-9000-__1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stderr
+2024-09-04T14:21:23,658 [INFO ] W-9000-__1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stdout
+2024-09-04T14:21:23,658 [INFO ] W-9000-__1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-__1.0-stderr
